@@ -6,8 +6,7 @@ app.set('port', 3000);
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-var server = app.listen(app.get('port'), function() {
-  var port = server.address().port;
-  console.log('Miracle can be found on port ' + port);
+app.listen(3000, ()=>{
+  console.log('Miracle happens on port =] ');
 });
 
